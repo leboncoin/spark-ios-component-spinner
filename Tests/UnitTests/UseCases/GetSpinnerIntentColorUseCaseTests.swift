@@ -7,7 +7,7 @@
 //
 
 @testable import SparkSpinner
-import SparkThemingTesting
+@_spi(SI_SPI) import SparkThemingTesting
 import XCTest
 
 final class GetSpinnerIntentColorUseCaseTests: XCTestCase {

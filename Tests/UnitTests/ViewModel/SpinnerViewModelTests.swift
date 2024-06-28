@@ -10,7 +10,7 @@ import Combine
 @testable import SparkSpinner
 @_spi(SI_SPI) @testable import SparkSpinnerTesting
 @_spi(SI_SPI) import SparkCommon
-import SparkThemingTesting
+@_spi(SI_SPI) import SparkThemingTesting
 import XCTest
 import SwiftUI
 

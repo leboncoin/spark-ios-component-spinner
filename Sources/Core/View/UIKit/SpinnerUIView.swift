@@ -114,7 +114,7 @@ public final class SpinnerUIView: UIView {
 
         let spinnerArc = UIBezierPath.arc(arcCenter: centerPoint, radius: (rect.width - self.strokeWidth) / 2 )
         spinnerArc.lineWidth = self.strokeWidth
-        ctx.setStrokeColor(self.viewModel.intentColor.uiColor.cgColor)
+        ctx.setStrokeColor(self.viewModel.intentColor.uiColor.resolvedColor(with: self.traitCollection).cgColor)
         spinnerArc.stroke()
 
         self.animate()

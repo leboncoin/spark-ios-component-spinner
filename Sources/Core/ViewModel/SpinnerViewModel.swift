@@ -1,6 +1,6 @@
 //
 //  SpinnerViewModel.swift
-//  SparkSpinner
+//  SparkComponentSpinner
 //
 //  Created by michael.zimmermann on 10.07.23.
 //  Copyright © 2023 Leboncoin. All rights reserved.
@@ -27,7 +27,7 @@ final class SpinnerViewModel: ObservableObject {
     private let useCase: any GetSpinnerIntentColorUseCasable
 
     // MARK: - Public Properties
-    var theme: Theme {
+    var theme: any Theme {
         didSet {
             self.intentColor = self.useCase.execute(colors: theme.colors, intent: intent)
         }
@@ -62,7 +62,7 @@ final class SpinnerViewModel: ObservableObject {
     /// - intent: the `SpinnerIntent`, which will determine the color of the spinner
     /// - spinnerSize: the `SpinnerSize`
     /// - userCase: `GetSpinnerIntentColorUseCasable` has a default value `GetSpinnerIntentColorUseCase`
-    init(theme: Theme,
+    init(theme: any Theme,
          intent: SpinnerIntent,
          spinnerSize: SpinnerSize,
          useCase: any GetSpinnerIntentColorUseCasable = GetSpinnerIntentColorUseCase()) {

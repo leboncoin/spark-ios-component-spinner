@@ -1,14 +1,14 @@
 //
 //  SpinnerViewModelTests.swift
-//  SparkSpinnerTests
+//  SparkComponentSpinnerTests
 //
 //  Created by michael.zimmermann on 11.07.23.
 //  Copyright © 2023 Leboncoin. All rights reserved.
 //
 
 import Combine
-@testable import SparkSpinner
-@_spi(SI_SPI) @testable import SparkSpinnerTesting
+@testable import SparkComponentSpinner
+@_spi(SI_SPI) @testable import SparkComponentSpinnerTesting
 @_spi(SI_SPI) import SparkCommon
 @_spi(SI_SPI) import SparkThemingTesting
 import XCTest

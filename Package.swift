@@ -5,18 +5,18 @@ import PackageDescription
 
 // swiftlint:disable all
 let package = Package(
-    name: "SparkSpinner",
+    name: "SparkComponentSpinner",
     platforms: [
         .iOS(.v16)
     ],
     products: [
         .library(
-            name: "SparkSpinner",
-            targets: ["SparkSpinner"]
+            name: "SparkComponentSpinner",
+            targets: ["SparkComponentSpinner"]
         ),
         .library(
-            name: "SparkSpinnerTesting",
-            targets: ["SparkSpinnerTesting"]
+            name: "SparkComponentSpinnerTesting",
+            targets: ["SparkComponentSpinnerTesting"]
         )
     ],
     dependencies: [
@@ -33,7 +33,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "SparkSpinner",
+            name: "SparkComponentSpinner",
             dependencies: [
                 .product(
                     name: "SparkCommon",
@@ -47,9 +47,9 @@ let package = Package(
             path: "Sources/Core"
         ),
         .target(
-            name: "SparkSpinnerTesting",
+            name: "SparkComponentSpinnerTesting",
             dependencies: [
-                "SparkSpinner",
+                "SparkComponentSpinner",
                 .product(
                     name: "SparkCommon",
                     package: "spark-ios-common"
@@ -70,10 +70,10 @@ let package = Package(
             path: "Sources/Testing"
         ),
         .testTarget(
-            name: "SparkSpinnerUnitTests",
+            name: "SparkComponentSpinnerUnitTests",
             dependencies: [
-                "SparkSpinner",
-                "SparkSpinnerTesting",
+                "SparkComponentSpinner",
+                "SparkComponentSpinnerTesting",
                 .product(
                     name: "SparkCommonTesting",
                     package: "spark-ios-common"
@@ -86,10 +86,10 @@ let package = Package(
             path: "Tests/UnitTests"
         ),
         .testTarget(
-            name: "SparkSpinnerSnapshotTests",
+            name: "SparkComponentSpinnerSnapshotTests",
             dependencies: [
-                "SparkSpinner",
-                "SparkSpinnerTesting",
+                "SparkComponentSpinner",
+                "SparkComponentSpinnerTesting",
                 .product(
                     name: "SparkCommonSnapshotTesting",
                     package: "spark-ios-common"

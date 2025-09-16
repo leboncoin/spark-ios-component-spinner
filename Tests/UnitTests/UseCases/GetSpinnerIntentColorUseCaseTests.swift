@@ -1,12 +1,12 @@
 //
 //  GetSpinnerIntentColorUseCaseTests.swift
-//  SparkSpinnerTests
+//  SparkComponentSpinnerTests
 //
 //  Created by michael.zimmermann on 11.07.23.
 //  Copyright © 2023 Leboncoin. All rights reserved.
 //
 
-@testable import SparkSpinner
+@testable import SparkComponentSpinner
 @_spi(SI_SPI) import SparkThemingTesting
 import XCTest
 

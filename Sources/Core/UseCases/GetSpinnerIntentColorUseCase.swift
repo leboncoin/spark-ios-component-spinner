@@ -1,6 +1,6 @@
 //
 //  GetSpinnerIntentColorUseCase.swift
-//  SparkSpinner
+//  SparkComponentSpinner
 //
 //  Created by michael.zimmermann on 10.07.23.
 //  Copyright © 2023 Leboncoin. All rights reserved.
@@ -24,7 +24,7 @@ struct GetSpinnerIntentColorUseCase: GetSpinnerIntentColorUseCasable {
     /// Calculate the color of the spinner depending on the intent
     ///
     /// - Parameters:
-    ///    - colors: Colors from the theme
+    ///    - colors: any Colors from the theme
     ///    - intent: `SpinnerIntent`.
     ///
     /// - Returns: ``ColorToken`` of the spinner.

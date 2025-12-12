@@ -1,5 +1,5 @@
 //
-//  GetSpinnerIntentColorUseCaseTests.swift
+//  SpinnerGetIntentColorUseCaseDeprecatedTests.swift
 //  SparkComponentSpinnerTests
 //
 //  Created by michael.zimmermann on 11.07.23.
@@ -10,16 +10,16 @@
 @_spi(SI_SPI) import SparkThemingTesting
 import XCTest
 
-final class GetSpinnerIntentColorUseCaseTests: XCTestCase {
+final class SpinnerGetIntentColorUseCaseDeprecatedTests: XCTestCase {
 
     // MARK: - Private properties
-    private var sut: GetSpinnerIntentColorUseCase!
+    private var sut: SpinnerGetIntentColorUseCaseDeprecated!
     private var colors: ColorsGeneratedMock!
 
     // MARK: - Setup
     override func setUp() {
         super.setUp()
-        self.sut = GetSpinnerIntentColorUseCase()
+        self.sut = SpinnerGetIntentColorUseCaseDeprecated()
         self.colors = ColorsGeneratedMock.mocked()
     }
 

@@ -2,8 +2,8 @@
 //  SpinnerSize.swift
 //  SparkComponentSpinner
 //
-//  Created by michael.zimmermann on 07.07.23.
-//  Copyright © 2023 Leboncoin. All rights reserved.
+//  Created by robin.lemaire on 10/12/2025.
+//  Copyright © 2025 Leboncoin. All rights reserved.
 //
 
 import Foundation
@@ -12,4 +12,9 @@ import Foundation
 public enum SpinnerSize: CaseIterable {
     case medium
     case small
+
+    // MARK: - Properties
+
+    /// The default case. Equals to **.medium**.
+    public static let `default`: Self = .medium
 }

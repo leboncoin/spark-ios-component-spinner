@@ -12,13 +12,14 @@ import SparkTheming
 /// SpinnerView is a single indeterminate spinner.
 /// The spinner can have a size of `small` or `medium` and have different intents which determine the color of the spinner.
 /// The spinner spin animation is 1 second linear infinite.
+@available(*, deprecated, message: "Use SparkSpinner instead")
 public struct SpinnerView: View {
 
     // MARK: - Type Alias
     private typealias AccessibilityIdentifier = SpinnerAccessibilityIdentifier
 
     // MARK: - Private Properties
-    @ObservedObject private var viewModel: SpinnerViewModel
+    @ObservedObject private var viewModel: SpinnerViewModelDeprecated
     @State private var rotationDegrees = 0.0
 
     @ScaledMetric private var size: CGFloat
@@ -33,10 +34,10 @@ public struct SpinnerView: View {
     public init(theme: any Theme,
                 intent: SpinnerIntent = .main,
                 spinnerSize: SpinnerSize = .small) {
-        self.init(viewModel: SpinnerViewModel(theme: theme, intent: intent, spinnerSize: spinnerSize))
+        self.init(viewModel: SpinnerViewModelDeprecated(theme: theme, intent: intent, spinnerSize: spinnerSize))
     }
 
-    init(viewModel: SpinnerViewModel) {
+    init(viewModel: SpinnerViewModelDeprecated) {
         self.viewModel = viewModel
         self._size = ScaledMetric(wrappedValue: viewModel.size)
         self._strokeWidth = ScaledMetric(wrappedValue: viewModel.strokeWidth)

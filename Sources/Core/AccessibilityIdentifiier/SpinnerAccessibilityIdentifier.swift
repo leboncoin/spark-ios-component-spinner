@@ -14,5 +14,9 @@ public enum SpinnerAccessibilityIdentifier {
     // MARK: - Properties
 
     /// The text label accessibility identifier.
+    @available(*, deprecated, message: "Use SpinnerAccessibilityIdentifier.view instead")
     public static let spinner = "spark-spinner"
+
+    /// The text label accessibility identifier.
+    public static let view = "spark-spinner"
 }

@@ -23,4 +23,4 @@ You can override this value **BUT** in this case, an **accessibilityLabel** must
 ### Resources
 
 - Specification on [ZeroHeight](https://zeroheight.com/1186e1705/p/7651da-spinner)
-- Desing on [Figma](https://www.figma.com/design/0QchRdipAVuvVoDfTjLrgQ/Spark-Component-Specs?node-id=2411-23008)
+- Design on [Figma](https://www.figma.com/design/0QchRdipAVuvVoDfTjLrgQ/Spark-Component-Specs?node-id=2411-23008)

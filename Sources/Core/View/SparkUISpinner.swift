@@ -107,6 +107,9 @@ public final class SparkUISpinner: UIView {
         self.accessibilityIdentifier = SpinnerAccessibilityIdentifier.view
         self.isAccessibilityElement = false
 
+        // Setup constraints
+        self.setupConstraints()
+
         // Setup publisher subcriptions
         self.setupSubscriptions()
 
@@ -143,6 +146,12 @@ public final class SparkUISpinner: UIView {
 
     public override var intrinsicContentSize: CGSize {
         return CGSize(value: self.contentSize)
+    }
+
+    // MARK: - Constraints
+
+    private func setupConstraints() {
+        self.translatesAutoresizingMaskIntoConstraints = false
     }
 
     // MARK: - Subscribe

@@ -14,9 +14,9 @@ final class SpinnerIntentTests: XCTestCase {
 
     // MARK: - Tests
 
-    func test_defaultValue_isBasic() {
+    func test_defaultValue_isSupport() {
         // GIVEN / WHEN / THEN
-        XCTAssertEqual(SpinnerIntent.default, .basic)
+        XCTAssertEqual(SpinnerIntent.default, .support)
     }
 
     // MARK: - Equality Tests
@@ -25,7 +25,6 @@ final class SpinnerIntentTests: XCTestCase {
         // GIVEN / WHEN / THEN
         XCTAssertEqual(SpinnerIntent.accent, .accent)
         XCTAssertEqual(SpinnerIntent.alert, .alert)
-        XCTAssertEqual(SpinnerIntent.basic, .basic)
         XCTAssertEqual(SpinnerIntent.error, .error)
         XCTAssertEqual(SpinnerIntent.info, .info)
         XCTAssertEqual(SpinnerIntent.main, .main)
@@ -45,6 +44,6 @@ final class SpinnerIntentTests: XCTestCase {
         // WHEN / THEN
         XCTAssertEqual(customIntent1, customIntent2)
         XCTAssertNotEqual(customIntent1, customIntent3)
-        XCTAssertNotEqual(customIntent1, .basic)
+        XCTAssertNotEqual(customIntent1, .support)
     }
 }

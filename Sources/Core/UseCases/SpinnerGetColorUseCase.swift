@@ -22,15 +22,14 @@ struct SpinnerGetColorUseCase: SpinnerGetColorUseCaseable {
         let colors = theme.colors
 
         return switch intent {
-        case .main: colors.main.main
-        case .support: colors.support.support
+        case .accent: colors.accent.accent
         case .alert: colors.feedback.alert
         case .error: colors.feedback.error
         case .info: colors.feedback.info
+        case .main: colors.main.main
         case .neutral: colors.feedback.neutral
         case .success: colors.feedback.success
-        case .accent: colors.accent.accent
-        case .basic: colors.basic.basic
+        case .support: colors.support.support
         case .custom(let colorToken): colorToken
         }
     }

@@ -92,14 +92,6 @@ final class SpinnerGetColorUseCaseTests: XCTestCase {
         XCTAssertEqual(result.color, self.theme.colors.accent.accent.color)
     }
 
-    func test_execute_basic() {
-        // GIVEN / WHEN
-        let result = self.sut.execute(theme: self.theme, intent: .basic)
-
-        // THEN
-        XCTAssertEqual(result.color, self.theme.colors.basic.basic.color)
-    }
-
     func test_execute_custom() {
         // GIVEN
         let customColorToken = ColorTokenGeneratedMock.blue()

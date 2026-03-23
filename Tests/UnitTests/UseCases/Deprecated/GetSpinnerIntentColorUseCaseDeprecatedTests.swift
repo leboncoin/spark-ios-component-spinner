@@ -28,10 +28,6 @@ final class SpinnerGetIntentColorUseCaseDeprecatedTests: XCTestCase {
         XCTAssertEqual(self.sut.execute(colors: self.colors, intent: .main).color, self.colors.main.main.color)
     }
 
-    func test_execute_support() {
-        XCTAssertEqual(self.sut.execute(colors: self.colors, intent: .support).color, self.colors.support.support.color)
-    }
-
     func test_execute_alert() {
         XCTAssertEqual(self.sut.execute(colors: self.colors, intent: .alert).color, self.colors.feedback.alert.color)
     }
@@ -56,7 +52,7 @@ final class SpinnerGetIntentColorUseCaseDeprecatedTests: XCTestCase {
         XCTAssertEqual(self.sut.execute(colors: self.colors, intent: .accent).color, self.colors.accent.accent.color)
     }
 
-    func test_execute_basic() {
-        XCTAssertEqual(self.sut.execute(colors: self.colors, intent: .basic).color, self.colors.basic.basic.color)
+    func test_execute_support() {
+        XCTAssertEqual(self.sut.execute(colors: self.colors, intent: .support).color, self.colors.support.support.color)
     }
 }

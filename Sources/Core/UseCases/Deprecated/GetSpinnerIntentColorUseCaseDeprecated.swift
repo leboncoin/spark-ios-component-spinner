@@ -40,7 +40,6 @@ struct SpinnerGetIntentColorUseCaseDeprecated: SpinnerGetIntentColorUseCasable {
         case .neutral: colors.feedback.neutral
         case .success: colors.feedback.success
         case .accent: colors.accent.accent
-        case .basic: colors.basic.basic
         case .custom(let colorToken): colorToken
         }
     }

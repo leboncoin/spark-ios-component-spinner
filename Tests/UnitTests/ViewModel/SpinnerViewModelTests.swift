@@ -241,7 +241,7 @@ private final class Stub {
     // MARK: - Given
 
     let givenTheme = ThemeGeneratedMock.mocked()
-    let givenIntent: SpinnerIntent = .basic
+    let givenIntent: SpinnerIntent = .support
     let givenSize: SpinnerSize = .medium
 
     // MARK: - Expected

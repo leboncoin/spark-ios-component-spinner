@@ -13,7 +13,6 @@ import SparkTheming
 public enum SpinnerIntent: Equatable {
     case accent
     case alert
-    case basic
     case error
     case info
     case main
@@ -25,8 +24,8 @@ public enum SpinnerIntent: Equatable {
 
     // MARK: - Properties
 
-    /// The default case. Equals to **.basic**.
-    public static let `default`: Self = .basic
+    /// The default case. Equals to **.support**.
+    public static let `default`: Self = .support
 
     // MARK: - Equatable
 
@@ -34,7 +33,6 @@ public enum SpinnerIntent: Equatable {
         return switch (lhs, rhs) {
         case (.accent, .accent): true
         case (.alert, .alert): true
-        case (.basic, .basic): true
         case (.error, .error): true
         case (.info, .info): true
         case (.main, .main): true

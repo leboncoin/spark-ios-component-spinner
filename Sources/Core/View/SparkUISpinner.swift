@@ -212,14 +212,14 @@ private extension UIBezierPath {
 private extension CALayer {
 
     private enum Animation {
-        static let basicKey = "transform.rotation.z"
+        static let supportKey = "transform.rotation.z"
         static let layerKey = "spinner.layer"
     }
 
     func animate() {
         self.removeAllAnimations()
 
-        let fullRotation = CABasicAnimation(keyPath: Animation.basicKey)
+        let fullRotation = CABasicAnimation(keyPath: Animation.supportKey)
         fullRotation.fromValue = 0
         fullRotation.toValue = 2 * CGFloat.pi
         fullRotation.duration = SpinnerConstants.animationDuration
